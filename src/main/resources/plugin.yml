@@ -1,0 +1,4 @@
+name: RebelsCraftingRecipes
+version: '${project.version}'
+main: me.rebelmythik.rebelscraftingrecipes.RebelsCraftingRecipes
+api-version: 1.19

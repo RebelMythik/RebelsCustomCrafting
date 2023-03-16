@@ -1,0 +1,64 @@
+# Crafting recipes
+crafting:
+  # Name for this recipe
+  example_recipe:
+    # Shape of the recipe, separated by newlines
+    shape: |-
+      ABA
+      CDC
+      ABA
+    # Ingredients, using any single-character keys
+    ingredients:
+      A:
+        type: OAK_WOOD
+      B:
+        type: IRON_INGOT
+      C:
+        type: DIAMOND
+      D:
+        type: STICK
+    # Result of the recipe
+    result:
+      type: DIAMOND_PICKAXE
+      amount: 1
+  # Another crafting recipe
+  example_recipe_2:
+    shape: |-
+      A A
+      A A
+      A A
+    ingredients:
+      A:
+        type: DIAMOND_BLOCK
+    result:
+      type: DIAMOND
+      amount: 9
+      name: "&6Diamond Block"
+      lore:
+        - "&eThis is a block made of diamonds"
+        - "&eIt's very shiny"
+
+# Smelting recipes
+smelting:
+  # Name for this recipe
+  example_smelting_recipe:
+    # Ingredient to be smelted
+    ingredient:
+      type: IRON_ORE
+    # Result of the smelting
+    result:
+      type: IRON_INGOT
+      amount: 1
+    # Experience gained from smelting this item
+    experience: 0.7
+    # Time it takes to smelt this item, in ticks (20 ticks = 1 second)
+    cooking-time: 200
+  # Another smelting recipe
+  example_smelting_recipe_2:
+    ingredient:
+      type: GOLD_ORE
+    result:
+      type: GOLD_INGOT
+      amount: 1
+    experience: 1.0
+    cooking-time: 250
